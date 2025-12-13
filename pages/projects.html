@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projets et réalisations techniques de [Votre Nom]">
+    <title>Projets - [Votre Nom]</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 text-white min-h-screen">
+    
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-slate-900/95 backdrop-blur-md z-50 border-b border-blue-500/20">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="../index.html" class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent hover:scale-105 transition-transform">
+                    Votre Nom
+                </a>
+                <div class="hidden md:flex gap-6">
+                    <a href="../index.html" class="text-slate-300 hover:text-blue-400 transition-colors text-sm font-medium">Accueil</a>
+                    <a href="about.html" class="text-slate-300 hover:text-blue-400 transition-colors text-sm font-medium">À propos</a>
+                    <a href="experience.html" class="text-slate-300 hover:text-blue-400 transition-colors text-sm font-medium">Expérience</a>
+                    <a href="projects.html" class="text-blue-400 hover:text-blue-300 transition-colors text-sm font-medium">Projets</a>
+                    <a href="research.html" class="text-slate-300 hover:text-blue-400 transition-colors text-sm font-medium">Recherche</a>
+                    <a href="contact.html" class="text-slate-300 hover:text-blue-400 transition-colors text-sm font-medium">Contact</a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-white">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <div class="flex flex-col gap-4">
+                    <a href="../index.html" class="text-slate-300 hover:text-blue-400 transition-colors text-sm font-medium">Accueil</a>
+                    <a href="about.html" class="text-slate-300 hover:text-blue-400 transition-colors text-sm font-medium">À propos</a>
+                    <a href="experience.html" class="text-slate-300 hover:text-blue-400 transition-colors text-sm font-medium">Expérience</a>
+                    <a href="projects.html" class="text-blue-400 hover:text-blue-300 transition-colors text-sm font-medium">Projets</a>
+                    <a href="research.html" class="text-slate-300 hover:text-blue-400 transition-colors text-sm font-medium">Recherche</a>
+                    <a href="contact.html" class="text-slate-300 hover:text-blue-400 transition-colors text-sm font-medium">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-32 pb-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            
+            <!-- Back Button -->
+            <a href="../index.html" class="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 mb-8 transition-colors group">
+                <i data-lucide="arrow-left" class="w-5 h-5 group-hover:-translate-x-1 transition-transform"></i>
+                Retour à l'accueil
+            </a>
+
+            <!-- Page Title -->
+            <div class="mb-12 animate-on-scroll">
+                <h1 class="text-5xl md:text-6xl font-bold mb-4 flex items-center gap-4">
+                    <div class="w-3 h-16 bg-blue-500 rounded"></div>
+                    Mes Projets
+                </h1>
+                <p class="text-xl text-slate-400 ml-7">Réalisations techniques et contributions</p>
+            </div>
+
+            <!-- Filter Buttons (Optional) -->
+            <div class="mb-12 animate-on-scroll">
+                <div class="flex flex-wrap gap-3 justify-center">
+                    <button class="filter-btn active bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-lg font-semibold transition-all" data-filter="all">
+                        Tous les projets
+                    </button>
+                    <button class="filter-btn bg-slate-700 hover:bg-slate-600 px-6 py-2 rounded-lg font-semibold transition-all" data-filter="ai">
+                        Intelligence Artificielle
+                    </button>
+                    <button class="filter-btn bg-slate-700 hover:bg-slate-600 px-6 py-2 rounded-lg font-semibold transition-all" data-filter="robotics">
+                        Robotique
+                    </button>
+                    <button class="filter-btn bg-slate-700 hover:bg-slate-600 px-6 py-2 rounded-lg font-semibold transition-all" data-filter="vision">
+                        Computer Vision
+                    </button>
+                </div>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+
+                <!-- Project 1 -->
+                <div class="project-card bg-slate-800/50 rounded-xl border border-slate-700 hover:border-blue-500/50 transition-all hover:transform hover:scale-105 overflow-hidden animate-on-scroll" data-category="ai">
+                    <!-- Project Image/Icon -->
+                    <div class="bg-gradient-to-br from-blue-600 to-cyan-600 p-8 flex items-center justify-center h-48">
+                        <i data-lucide="brain" class="w-20 h-20"></i>
+                    </div>
+                    
+                    <!-- Project Content -->
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-2xl font-bold text-blue-400">Projet 1</h3>
+                            <span class="bg-blue-600/20 text-blue-400 px-3 py-1 rounded-full text-xs font-semibold">IA</span>
+                        </div>
+                        
+                        <p class="text-slate-300 mb-4 text-sm leading-relaxed">
+                            [Description courte du projet : objectif principal, problématique abordée, 
+                            approche utilisée en 2-3 phrases]
+                        </p>
+                        
+                        <!-- Technologies -->
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-600/20 text-blue-400 px-3 py-1 rounded-full text-xs">Python</span>
+                            <span class="bg-blue-600/20 text-blue-400 px-3 py-1 rounded-full text-xs">TensorFlow</span>
+                            <span class="bg-blue-600/20 text-blue-400 px-3 py-1 rounded-full text-xs">Keras</span>
+                        </div>
+                        
+                        <!-- Actions -->
+                        <div class="flex gap-3">
+                            <a href="#project1-details" class="flex-1 text-center bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg text-sm font-semibold transition-all">
+                                Détails
+                            </a>
+                            <a href="#" target="_blank" class="bg-slate-700 hover:bg-slate-600 p-2 rounded-lg transition-all" title="GitHub">
+                                <i data-lucide="github" class="w-5 h-5"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card bg-slate-800/50 rounded-xl border border-slate-700 hover:border-blue-500/50 transition-all hover:transform hover:scale-105 overflow-hidden animate-on-scroll" data-category="robotics">
+                    <!-- Project Image/Icon -->
+                    <div class="bg-gradient-to-br from-cyan-600 to-blue-600 p-8 flex items-center justify-center h-48">
+                        <i data-lucide="cpu" class="w-20 h-20"></i>
+                    </div>
+                    
+                    <!-- Project Content -->
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-2xl font-bold text-cyan-400">Projet 2</h3>
+                            <span class="bg-cyan-600/20 text-cyan-400 px-3 py-1 rounded-full text-xs font-semibold">Robotique</span>
+                        </div>
+                        
+                        <p class="text-slate-300 mb-4 text-sm leading-relaxed">
+                            [Description courte du projet robotique : système développé, 
+                            capacités du robot, technologies de navigation ou manipulation]
+                        </p>
+                        
+                        <!-- Technologies -->
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-cyan-600/20 text-cyan-400 px-3 py-1 rounded-full text-xs">ROS</span>
+                            <span class="bg-cyan-600/20 text-cyan-400 px-3 py-1 rounded-full text-xs">C++</span>
+                            <span class="bg-cyan-600/20 text-cyan-400 px-3 py-1 rounded-full text-xs">Gazebo</span>
+                        </div>
+                        
+                        <!-- Actions -->
+                        <div class="flex gap-3">
+                            <a href="#project2-details" class="flex-1 text-center bg-cyan-600 hover:bg-cyan-700 px-4 py-2 rounded-lg text-sm font-semibold transition-all">
+                                Détails
+                            </a>
+                            <a href="#" target="_blank" class="bg-slate-700 hover:bg-slate-600 p-2 rounded-lg transition-all" title="GitHub">
+                                <i data-lucide="github" class="w-5 h-5"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card bg-slate-800/50 rounded-xl border border-slate-700 hover:border-blue-500/50 transition-all hover:transform hover:scale-105 overflow-hidden animate-on-scroll" data-category="vision">
+                    <!-- Project Image/Icon -->
+                    <div class="bg-gradient-to-br from-purple-600 to-pink-600 p-8 flex items-center justify-center h-48">
+                        <i data-lucide="eye" class="w-20 h-20"></i>
+                    </div>
+                    
+                    <!-- Project Content -->
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-2xl font-bold text-purple-400">Projet 3</h3>
+                            <span class="bg-purple-600/20 text-purple-400 px-3 py-1 rounded-full text-xs font-semibold">Vision</span>
+                        </div>
+                        
+                        <p class="text-slate-300 mb-4 text-sm leading-relaxed">
+                            [Description courte du projet vision : détection, reconnaissance, segmentation, 
+                            application pratique du système de vision]
+                        </p>
+                        
+                        <!-- Technologies -->
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-purple-600/20 text-purple-400 px-3 py-1 rounded-full text-xs">Python</span>
+                            <span class="bg-purple-600/20 text-purple-400 px-3 py-1 rounded-full text-xs">OpenCV</span>
+                            <span class="bg-purple-600/20 text-purple-400 px-3 py-1 rounded-full text-xs">PyTorch</span>
+                        </div>
+                        
+                        <!-- Actions -->
+                        <div class="flex gap-3">
+                            <a href="#project3-details" class="flex-1 text-center bg-purple-600 hover:bg-purple-700 px-4 py-2 rounded-lg text-sm font-semibold transition-all">
+                                Détails
+                            </a>
+                            <a href="#" target="_blank" class="bg-slate-700 hover:bg-slate-600 p-2 rounded-lg transition-all" title="GitHub">
+                                <i data-lucide="github" class="w-5 h-5"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vous pouvez ajouter plus de projets en dupliquant les cartes ci-dessus -->
+
+            </div>
+
+            <!-- Project Details Sections (Hidden by default, shown when clicking "Détails") -->
+            
+            <!-- Project 1 Details -->
+            <section id="project1-details" class="mb-12 animate-on-scroll hidden">
+                <div class="bg-slate-800/50 p-8 rounded-xl border border-slate-700">
+                    <div class="flex items-center justify-between mb-6">
+                        <h2 class="text-4xl font-bold text-blue-400">Projet 1 - Détails Complets</h2>
+                        <button onclick="this.closest('section').classList.add('hidden')" class="text-slate-400 hover:text-white transition-colors">
+                            <i data-lucide="x" class="w-6 h-6"></i>
+                        </button>
+                    </div>
+
+                    <!-- Context -->
+                    <div class="mb-6">
+                        <h3 class="text-2xl font-semibold text-slate-200 mb-3 flex items-center gap-2">
+                            <i data-lucide="info" class="w-6 h-6 text-blue-400"></i>
+                            Contexte et Objectifs
+                        </h3>
+                        <p class="text-slate-300 leading-relaxed mb-4">
+                            [Décrivez le contexte complet du projet : pourquoi ce projet, quel problème il résout, 
+                            dans quel cadre il a été réalisé (cours, personnel, recherche)]
+                        </p>
+                        <p class="text-slate-300 leading-relaxed">
+                            [Objectifs précis du projet, ce que vous vouliez accomplir, les défis anticipés]
+                        </p>
+                    </div>
+
+                    <!-- Technical Approach -->
+                    <div class="mb-6">
+                        <h3 class="text-2xl font-semibold text-slate-200 mb-3 flex items-center gap-2">
+                            <i data-lucide="settings" class="w-6 h-6 text-blue-400"></i>
+                            Approche Technique
+                        </h3>
+                        <p class="text-slate-300 leading-relaxed mb-4">
+                            [Décrivez votre approche : architecture du système, algorithmes utilisés, 
+                            méthodologie de développement]
+                        </p>
+                        <ul class="space-y-2">
+                            <li class="flex items-start gap-3 text-slate-300">
+                                <i data-lucide="chevron-right" class="w-5 h-5 text-blue-400 mt-1 flex-shrink-0"></i>
+                                <span>[Point technique 1 : ex. Architecture de réseau de neurones utilisée]</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-slate-300">
+                                <i data-lucide="chevron-right" class="w-5 h-5 text-blue-400 mt-1 flex-shrink-0"></i>
+                                <span>[Point technique 2 : ex. Preprocessing des données]</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-slate-300">
+                                <i data-lucide="chevron-right" class="w-5 h-5 text-blue-400 mt-1 flex-shrink-0"></i>
+                                <span>[Point technique 3 : ex. Optimisation et entraînement]</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Technologies in detail -->
+                    <div class="mb-6">
+                        <h3 class="text-2xl font-semibold text-slate-200 mb-3 flex items-center gap-2">
+                            <i data-lucide="code-2" class="w-6 h-6 text-blue-400"></i>
+                            Technologies et Outils
+                        </h3>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div class="bg-slate-900/50 p-4 rounded-lg">
+                                <h4 class="font-semibold text-slate-200 mb-2">Langages</h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="bg-blue-600/20 text-blue-300 px-3 py-1 rounded-lg text-sm">Python</span>
+                                    <span class="bg-blue-600/20 text-blue-300 px-3 py-1 rounded-lg text-sm">[Autre]</span>
+                                </div>
+                            </div>
+                            <div class="bg-slate-900/50 p-4 rounded-lg">
+                                <h4 class="font-semibold text-slate-200 mb-2">Frameworks/Libraries</h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="bg-blue-600/20 text-blue-300 px-3 py-1 rounded-lg text-sm">TensorFlow</span>
+                                    <span class="bg-blue-600/20 text-blue-300 px-3 py-1 rounded-lg text-sm">NumPy</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Results -->
+                    <div class="mb-6">
+                        <h3 class="text-2xl font-semibold text-slate-200 mb-3 flex items-center gap-2">
+                            <i data-lucide="trophy" class="w-6 h-6 text-yellow-400"></i>
+                            Résultats et Réalisations
+                        </h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start gap-3 text-slate-300">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-green-400 mt-1 flex-shrink-0"></i>
+                                <span>[Résultat quantifiable 1 : ex. Précision de 95% sur le dataset de test]</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-slate-300">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-green-400 mt-1 flex-shrink-0"></i>
+                                <span>[Résultat quantifiable 2 : ex. Temps de traitement réduit de 40%]</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-slate-300">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-green-400 mt-1 flex-shrink-0"></i>
+                                <span>[Impact : ex. Utilisé par X personnes, présenté à Y]</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Links -->
+                    <div class="flex gap-4 flex-wrap">
+                        <a href="#" target="_blank" class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg font-semibold transition-all inline-flex items-center gap-2">
+                            <i data-lucide="github" class="w-5 h-5"></i>
+                            Voir sur GitHub
+                        </a>
+                        <a href="#" target="_blank" class="border-2 border-blue-500 hover:bg-blue-500/10 px-6 py-3 rounded-lg font-semibold transition-all inline-flex items-center gap-2">
+                            <i data-lucide="external-link" class="w-5 h-5"></i>
+                            Démo en ligne
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Note about adding more projects -->
+            <div class="bg-slate-800/30 p-6 rounded-xl border border-slate-700 text-center animate-on-scroll">
+                <i data-lucide="info" class="w-12 h-12 text-blue-400 mx-auto mb-4"></i>
+                <h3 class="text-xl font-bold text-slate-200 mb-2">Plus de projets à venir</h3>
+                <p class="text-slate-400">
+                    Je travaille constamment sur de nouveaux projets. N'hésitez pas à consulter mon 
+                    <a href="#" class="text-blue-400 hover:text-blue-300 underline">GitHub</a> 
+                    pour voir mes dernières contributions.
+                </p>
+            </div>
+
+            <!-- CTA -->
+            <section class="mt-12 animate-on-scroll">
+                <div class="bg-gradient-to-r from-blue-600/20 to-cyan-600/20 p-8 rounded-xl border border-blue-500/30 text-center">
+                    <h2 class="text-2xl font-bold text-blue-400 mb-4">Intéressé par mes projets ?</h2>
+                    <p class="text-lg text-slate-300 mb-6">
+                        Discutons de collaborations potentielles ou d'opportunités de recherche
+                    </p>
+                    <div class="flex gap-4 justify-center flex-wrap">
+                        <a href="contact.html" class="bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-lg font-semibold transition-all hover:scale-105 shadow-lg inline-flex items-center gap-2">
+                            <i data-lucide="mail" class="w-5 h-5"></i>
+                            Me contacter
+                        </a>
+                        <a href="research.html" class="border-2 border-blue-500 hover:bg-blue-500/10 px-8 py-3 rounded-lg font-semibold transition-all hover:scale-105 inline-flex items-center gap-2">
+                            <i data-lucide="award" class="w-5 h-5"></i>
+                            Activités de recherche
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-8 px-6 border-t border-slate-700">
+        <div class="max-w-7xl mx-auto text-center text-slate-400">
+            <p>© 2024 Votre Nom - Portfolio Recherche | Master Automatique & Robotique</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../js/script.js"></script>
+    
+    <!-- Project Details Toggle Script -->
+    <script>
+        // Toggle project details
+        document.querySelectorAll('a[href^="#project"]').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+                
+                if (targetSection) {
+                    // Hide all project details
+                    document.querySelectorAll('[id$="-details"]').forEach(section => {
+                        section.classList.add('hidden');
+                    });
+                    
+                    // Show target section
+                    targetSection.classList.remove('hidden');
+                    
+                    // Scroll to section
+                    targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Filter functionality
+        document.querySelectorAll('.filter-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                // Remove active class from all buttons
+                document.querySelectorAll('.filter-btn').forEach(btn => {
+                    btn.classList.remove('active', 'bg-blue-600');
+                    btn.classList.add('bg-slate-700');
+                });
+                
+                // Add active class to clicked button
+                this.classList.add('active', 'bg-blue-600');
+                this.classList.remove('bg-slate-700');
+                
+                const filter = this.getAttribute('data-filter');
+                const projects = document.querySelectorAll('.project-card');
+                
+                projects.forEach(project => {
+                    if (filter === 'all' || project.getAttribute('data-category') === filter) {
+                        project.style.display = 'block';
+                        setTimeout(() => {
+                            project.style.opacity = '1';
+                            project.style.transform = 'scale(1)';
+                        }, 10);
+                    } else {
+                        project.style.opacity = '0';
+                        project.style.transform = 'scale(0.8)';
+                        setTimeout(() => {
+                            project.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+    </script>
+    
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+portfolio/
+├── index.html 
+├── pages/
+│   ├── about.html
+│   ├── experience.html
+│   ├── projects.html
+│   ├── research.html
+│   └── contact.html
+├── css/
+│   └── style.css
+├── js/
+│   └── script.js
+└── assets/
+    └── images/

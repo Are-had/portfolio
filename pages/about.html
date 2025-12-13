@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="À propos de [Votre Nom] - Parcours, intérêts de recherche et objectifs professionnels">
+    <title>À propos - [Votre Nom]</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 text-white min-h-screen">
+    
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-slate-900/95 backdrop-blur-md z-50 border-b border-blue-500/20">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="../index.html" class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent hover:scale-105 transition-transform">
+                    Votre Nom
+                </a>
+                <div class="hidden md:flex gap-6">
+                    <a href="../index.html" class="text-slate-300 hover:text-blue-400 transition-colors text-sm font-medium">Accueil</a>
+                    <a href="about.html" class="text-blue-400 hover:text-blue-300 transition-colors text-sm font-medium">À propos</a>
+                    <a href="experience.html" class="text-slate-300 hover:text-blue-400 transition-colors text-sm font-medium">Expérience</a>
+                    <a href="projects.html" class="text-slate-300 hover:text-blue-400 transition-colors text-sm font-medium">Projets</a>
+                    <a href="research.html" class="text-slate-300 hover:text-blue-400 transition-colors text-sm font-medium">Recherche</a>
+                    <a href="contact.html" class="text-slate-300 hover:text-blue-400 transition-colors text-sm font-medium">Contact</a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-white">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <div class="flex flex-col gap-4">
+                    <a href="../index.html" class="text-slate-300 hover:text-blue-400 transition-colors text-sm font-medium">Accueil</a>
+                    <a href="about.html" class="text-blue-400 hover:text-blue-300 transition-colors text-sm font-medium">À propos</a>
+                    <a href="experience.html" class="text-slate-300 hover:text-blue-400 transition-colors text-sm font-medium">Expérience</a>
+                    <a href="projects.html" class="text-slate-300 hover:text-blue-400 transition-colors text-sm font-medium">Projets</a>
+                    <a href="research.html" class="text-slate-300 hover:text-blue-400 transition-colors text-sm font-medium">Recherche</a>
+                    <a href="contact.html" class="text-slate-300 hover:text-blue-400 transition-colors text-sm font-medium">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-32 pb-20 px-6">
+        <div class="max-w-4xl mx-auto">
+            
+            <!-- Back Button -->
+            <a href="../index.html" class="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 mb-8 transition-colors group">
+                <i data-lucide="arrow-left" class="w-5 h-5 group-hover:-translate-x-1 transition-transform"></i>
+                Retour à l'accueil
+            </a>
+
+            <!-- Page Title -->
+            <div class="mb-12 animate-on-scroll">
+                <h1 class="text-5xl md:text-6xl font-bold mb-4 flex items-center gap-4">
+                    <div class="w-3 h-16 bg-blue-500 rounded"></div>
+                    À propos de moi
+                </h1>
+                <p class="text-xl text-slate-400 ml-7">Parcours, passions et ambitions</p>
+            </div>
+
+            <!-- Introduction Section -->
+            <section class="mb-12 animate-on-scroll">
+                <div class="bg-slate-800/50 p-8 rounded-xl border border-slate-700 hover:border-blue-500/50 transition-all">
+                    <div class="flex items-start gap-6 mb-6">
+                        <div class="w-24 h-24 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-full flex items-center justify-center text-3xl font-bold flex-shrink-0">
+                            VN
+                        </div>
+                        <div>
+                            <h2 class="text-3xl font-bold text-blue-400 mb-2">Bonjour !</h2>
+                            <p class="text-lg text-slate-300">
+                                Je suis <span class="text-blue-400 font-semibold">[Votre Nom]</span>, 
+                                étudiant passionné par l'intelligence artificielle et la robotique.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Academic Journey -->
+            <section class="mb-12 animate-on-scroll">
+                <div class="bg-slate-800/50 p-8 rounded-xl border border-slate-700">
+                    <div class="flex items-center gap-3 mb-6">
+                        <i data-lucide="graduation-cap" class="w-8 h-8 text-blue-400"></i>
+                        <h2 class="text-3xl font-bold text-blue-400">Parcours Académique</h2>
+                    </div>
+                    <p class="text-lg text-slate-300 leading-relaxed mb-4">
+                        Actuellement en <span class="text-blue-400 font-semibold">Master Automatique et Robotique</span>, 
+                        parcours <span class="text-blue-400 font-semibold">Systèmes Intelligents</span> à 
+                        <span class="text-blue-400 font-semibold">Sorbonne Université</span>, 
+                        je poursuis mon alternance au laboratoire <span class="text-blue-400 font-semibold">LMD 
+                        (Laboratoire de Météorologie Dynamique)</span> où je travaille sur 
+                        <span class="text-cyan-400 font-semibold">[votre sujet de recherche spécifique]</span>.
+                    </p>
+                    <p class="text-lg text-slate-300 leading-relaxed mb-4">
+                        Mon parcours m'a permis d'acquérir une solide formation en mathématiques appliquées, 
+                        algorithmique, et intelligence artificielle, avec une spécialisation en systèmes autonomes 
+                        et apprentissage automatique.
+                    </p>
+                    <p class="text-lg text-slate-300 leading-relaxed">
+                        J'ai développé une expertise dans la conception et l'implémentation d'algorithmes intelligents, 
+                        ainsi qu'une compréhension approfondie des défis liés à l'autonomie des systèmes robotiques.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Research Interests -->
+            <section class="mb-12 animate-on-scroll">
+                <div class="bg-slate-800/50 p-8 rounded-xl border border-slate-700">
+                    <div class="flex items-center gap-3 mb-6">
+                        <i data-lucide="lightbulb" class="w-8 h-8 text-blue-400"></i>
+                        <h2 class="text-3xl font-bold text-blue-400">Intérêts de Recherche</h2>
+                    </div>
+                    <p class="text-slate-300 mb-6 text-lg">
+                        Mes domaines d'intérêt couvrent plusieurs aspects de l'intelligence artificielle et de la robotique :
+                    </p>
+                    
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <!-- Interest 1 -->
+                        <div class="bg-slate-900/50 p-6 rounded-lg border border-blue-500/30 hover:border-blue-500/70 transition-all">
+                            <div class="flex items-start gap-3 mb-3">
+                                <div class="bg-blue-600 p-2 rounded-lg mt-1">
+                                    <i data-lucide="brain" class="w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-semibold text-blue-400 mb-2">Intelligence Artificielle</h3>
+                                    <p class="text-slate-300 text-sm leading-relaxed">
+                                        Apprentissage par renforcement, réseaux de neurones profonds, 
+                                        et architectures d'apprentissage avancées pour la prise de décision autonome.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Interest 2 -->
+                        <div class="bg-slate-900/50 p-6 rounded-lg border border-cyan-500/30 hover:border-cyan-500/70 transition-all">
+                            <div class="flex items-start gap-3 mb-3">
+                                <div class="bg-cyan-600 p-2 rounded-lg mt-1">
+                                    <i data-lucide="cpu" class="w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-semibold text-cyan-400 mb-2">Robotique</h3>
+                                    <p class="text-slate-300 text-sm leading-relaxed">
+                                        Systèmes autonomes, navigation intelligente, manipulation d'objets, 
+                                        et interaction robot-environnement dans des contextes complexes.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Interest 3 -->
+                        <div class="bg-slate-900/50 p-6 rounded-lg border border-purple-500/30 hover:border-purple-500/70 transition-all">
+                            <div class="flex items-start gap-3 mb-3">
+                                <div class="bg-purple-600 p-2 rounded-lg mt-1">
+                                    <i data-lucide="eye" class="w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-semibold text-purple-400 mb-2">Computer Vision</h3>
+                                    <p class="text-slate-300 text-sm leading-relaxed">
+                                        Traitement d'images, détection et reconnaissance d'objets, 
+                                        segmentation sémantique, et perception visuelle pour robots.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Interest 4 -->
+                        <div class="bg-slate-900/50 p-6 rounded-lg border border-pink-500/30 hover:border-pink-500/70 transition-all">
+                            <div class="flex items-start gap-3 mb-3">
+                                <div class="bg-pink-600 p-2 rounded-lg mt-1">
+                                    <i data-lucide="activity" class="w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-semibold text-pink-400 mb-2">Contrôle Optimal</h3>
+                                    <p class="text-slate-300 text-sm leading-relaxed">
+                                        Optimisation de trajectoires, contrôle prédictif, 
+                                        et stratégies de commande pour systèmes dynamiques complexes.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Professional Goals -->
+            <section class="mb-12 animate-on-scroll">
+                <div class="bg-gradient-to-br from-blue-600/10 to-cyan-600/10 p-8 rounded-xl border-2 border-blue-500/50">
+                    <div class="flex items-center gap-3 mb-6">
+                        <i data-lucide="target" class="w-8 h-8 text-blue-400"></i>
+                        <h2 class="text-3xl font-bold text-blue-400">Objectifs Professionnels</h2>
+                    </div>
+                    <p class="text-lg text-slate-300 leading-relaxed mb-4">
+                        Je suis à la recherche d'une <span class="text-blue-400 font-semibold">thèse de doctorat</span> ou d'un 
+                        <span class="text-blue-400 font-semibold"> poste en CDI en R&D</span> dans le domaine de l'intelligence 
+                        artificielle appliquée à la robotique ou aux systèmes autonomes.
+                    </p>
+                    <p class="text-lg text-slate-300 leading-relaxed mb-4">
+                        Mon objectif est de contribuer à l'avancement des technologies qui permettront aux machines d'interagir 
+                        de manière plus intelligente et autonome avec leur environnement, tout en développant des solutions 
+                        innovantes pour les défis actuels de la robotique.
+                    </p>
+                    <p class="text-lg text-slate-300 leading-relaxed">
+                        Je suis particulièrement intéressé par les projets qui combinent recherche fondamentale et applications 
+                        pratiques, et qui ont un impact réel sur la société.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Continuous Learning -->
+            <section class="mb-12 animate-on-scroll">
+                <div class="bg-slate-800/50 p-8 rounded-xl border border-slate-700">
+                    <div class="flex items-center gap-3 mb-6">
+                        <i data-lucide="book-open" class="w-8 h-8 text-blue-400"></i>
+                        <h2 class="text-3xl font-bold text-blue-400">Apprentissage Continu</h2>
+                    </div>
+                    <p class="text-lg text-slate-300 leading-relaxed mb-6">
+                        Au-delà de ma formation académique, j'ai toujours cherché à enrichir mes connaissances 
+                        et à développer mes compétences à travers diverses expériences :
+                    </p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4 p-4 bg-slate-900/50 rounded-lg">
+                            <i data-lucide="trophy" class="w-6 h-6 text-yellow-400 mt-1 flex-shrink-0"></i>
+                            <div>
+                                <h3 class="font-semibold text-slate-200 mb-1">Hackathons</h3>
+                                <p class="text-slate-400 text-sm">
+                                    Participation à 2 hackathons majeurs, développant des solutions innovantes 
+                                    en un temps limité et en équipe.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4 p-4 bg-slate-900/50 rounded-lg">
+                            <i data-lucide="sun" class="w-6 h-6 text-orange-400 mt-1 flex-shrink-0"></i>
+                            <div>
+                                <h3 class="font-semibold text-slate-200 mb-1">Summer Schools</h3>
+                                <p class="text-slate-400 text-sm">
+                                    2 summer schools internationales sur des thématiques avancées en IA et robotique, 
+                                    me permettant d'échanger avec des experts du domaine.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4 p-4 bg-slate-900/50 rounded-lg">
+                            <i data-lucide="users" class="w-6 h-6 text-purple-400 mt-1 flex-shrink-0"></i>
+                            <div>
+                                <h3 class="font-semibold text-slate-200 mb-1">Programme Keskia</h3>
+                                <p class="text-slate-400 text-sm">
+                                    Participation au programme Keskia, [description de ce que c'est et ce que vous y avez appris].
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Personal Interests -->
+            <section class="mb-12 animate-on-scroll">
+                <div class="bg-slate-800/50 p-8 rounded-xl border border-slate-700">
+                    <div class="flex items-center gap-3 mb-6">
+                        <i data-lucide="heart" class="w-8 h-8 text-blue-400"></i>
+                        <h2 class="text-3xl font-bold text-blue-400">Au-delà de la Recherche</h2>
+                    </div>
+                    <p class="text-lg text-slate-300 leading-relaxed mb-4">
+                        En dehors de mes activités académiques et professionnelles, je suis passionné par 
+                        [vos hobbies/intérêts personnels - par exemple : l'open source, la vulgarisation scientifique, 
+                        le sport, la photographie, etc.].
+                    </p>
+                    <p class="text-lg text-slate-300 leading-relaxed">
+                        Je crois fermement que l'équilibre entre vie professionnelle et personnelle est essentiel 
+                        pour maintenir créativité et motivation dans la recherche.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Call to Action -->
+            <section class="animate-on-scroll">
+                <div class="bg-gradient-to-r from-blue-600/20 to-cyan-600/20 p-8 rounded-xl border border-blue-500/30 text-center">
+                    <h2 class="text-2xl font-bold text-blue-400 mb-4">Intéressé par mon profil ?</h2>
+                    <p class="text-lg text-slate-300 mb-6">
+                        N'hésitez pas à me contacter pour discuter d'opportunités de collaboration ou de thèse.
+                    </p>
+                    <div class="flex gap-4 justify-center flex-wrap">
+                        <a href="contact.html" class="bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-lg font-semibold transition-all hover:scale-105 shadow-lg inline-flex items-center gap-2">
+                            <i data-lucide="mail" class="w-5 h-5"></i>
+                            Me contacter
+                        </a>
+                        <a href="projects.html" class="border-2 border-blue-500 hover:bg-blue-500/10 px-8 py-3 rounded-lg font-semibold transition-all hover:scale-105 inline-flex items-center gap-2">
+                            <i data-lucide="folder" class="w-5 h-5"></i>
+                            Voir mes projets
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-8 px-6 border-t border-slate-700">
+        <div class="max-w-7xl mx-auto text-center text-slate-400">
+            <p>© 2024 Votre Nom - Portfolio Recherche | Master Automatique & Robotique</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../js/script.js"></script>
+    
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

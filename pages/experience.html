@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Expérience professionnelle et formation de [Votre Nom]">
+    <title>Expérience - [Votre Nom]</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 text-white min-h-screen">
+    
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-slate-900/95 backdrop-blur-md z-50 border-b border-blue-500/20">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="../index.html" class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent hover:scale-105 transition-transform">
+                    Votre Nom
+                </a>
+                <div class="hidden md:flex gap-6">
+                    <a href="../index.html" class="text-slate-300 hover:text-blue-400 transition-colors text-sm font-medium">Accueil</a>
+                    <a href="about.html" class="text-slate-300 hover:text-blue-400 transition-colors text-sm font-medium">À propos</a>
+                    <a href="experience.html" class="text-blue-400 hover:text-blue-300 transition-colors text-sm font-medium">Expérience</a>
+                    <a href="projects.html" class="text-slate-300 hover:text-blue-400 transition-colors text-sm font-medium">Projets</a>
+                    <a href="research.html" class="text-slate-300 hover:text-blue-400 transition-colors text-sm font-medium">Recherche</a>
+                    <a href="contact.html" class="text-slate-300 hover:text-blue-400 transition-colors text-sm font-medium">Contact</a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-white">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <div class="flex flex-col gap-4">
+                    <a href="../index.html" class="text-slate-300 hover:text-blue-400 transition-colors text-sm font-medium">Accueil</a>
+                    <a href="about.html" class="text-slate-300 hover:text-blue-400 transition-colors text-sm font-medium">À propos</a>
+                    <a href="experience.html" class="text-blue-400 hover:text-blue-300 transition-colors text-sm font-medium">Expérience</a>
+                    <a href="projects.html" class="text-slate-300 hover:text-blue-400 transition-colors text-sm font-medium">Projets</a>
+                    <a href="research.html" class="text-slate-300 hover:text-blue-400 transition-colors text-sm font-medium">Recherche</a>
+                    <a href="contact.html" class="text-slate-300 hover:text-blue-400 transition-colors text-sm font-medium">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-32 pb-20 px-6">
+        <div class="max-w-5xl mx-auto">
+            
+            <!-- Back Button -->
+            <a href="../index.html" class="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 mb-8 transition-colors group">
+                <i data-lucide="arrow-left" class="w-5 h-5 group-hover:-translate-x-1 transition-transform"></i>
+                Retour à l'accueil
+            </a>
+
+            <!-- Page Title -->
+            <div class="mb-12 animate-on-scroll">
+                <h1 class="text-5xl md:text-6xl font-bold mb-4 flex items-center gap-4">
+                    <div class="w-3 h-16 bg-blue-500 rounded"></div>
+                    Expérience Professionnelle
+                </h1>
+                <p class="text-xl text-slate-400 ml-7">Parcours et réalisations</p>
+            </div>
+
+            <!-- Timeline -->
+            <div class="space-y-8">
+
+                <!-- Current Position - Alternance LMD -->
+                <section class="animate-on-scroll">
+                    <div class="bg-gradient-to-br from-blue-600/10 to-cyan-600/10 p-8 rounded-xl border-2 border-blue-500/50 timeline-item">
+                        
+                        <!-- Header -->
+                        <div class="flex items-start justify-between mb-6 flex-wrap gap-4">
+                            <div class="flex items-start gap-4">
+                                <div class="bg-blue-600 p-4 rounded-xl">
+                                    <i data-lucide="briefcase" class="w-8 h-8"></i>
+                                </div>
+                                <div>
+                                    <h2 class="text-3xl font-bold text-blue-400 mb-2">Alternant Recherche</h2>
+                                    <p class="text-xl text-slate-200 mb-2">Laboratoire de Météorologie Dynamique (LMD)</p>
+                                    <div class="flex flex-wrap items-center gap-4 text-slate-400">
+                                        <span class="flex items-center gap-2">
+                                            <i data-lucide="calendar" class="w-4 h-4"></i>
+                                            [Date début] - Présent
+                                        </span>
+                                        <span class="flex items-center gap-2">
+                                            <i data-lucide="map-pin" class="w-4 h-4"></i>
+                                            Paris, France
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="bg-green-600/20 text-green-400 px-4 py-2 rounded-full text-sm font-semibold border border-green-500/30">
+                                En cours
+                            </span>
+                        </div>
+
+                        <!-- Context -->
+                        <div class="mb-6">
+                            <h3 class="text-xl font-semibold text-slate-200 mb-3 flex items-center gap-2">
+                                <i data-lucide="file-text" class="w-5 h-5 text-blue-400"></i>
+                                Contexte
+                            </h3>
+                            <p class="text-slate-300 leading-relaxed">
+                                [Décrivez le contexte de votre alternance : le laboratoire, l'équipe, le projet global, 
+                                les enjeux scientifiques, etc.]
+                            </p>
+                        </div>
+
+                        <!-- Missions -->
+                        <div class="mb-6">
+                            <h3 class="text-xl font-semibold text-slate-200 mb-4 flex items-center gap-2">
+                                <i data-lucide="list-checks" class="w-5 h-5 text-blue-400"></i>
+                                Missions principales
+                            </h3>
+                            <ul class="space-y-3">
+                                <li class="flex items-start gap-3 text-slate-300">
+                                    <i data-lucide="chevron-right" class="w-5 h-5 text-blue-400 mt-1 flex-shrink-0"></i>
+                                    <span>[Mission 1 : Décrivez en détail votre première mission principale, 
+                                    les problématiques abordées, votre approche]</span>
+                                </li>
+                                <li class="flex items-start gap-3 text-slate-300">
+                                    <i data-lucide="chevron-right" class="w-5 h-5 text-blue-400 mt-1 flex-shrink-0"></i>
+                                    <span>[Mission 2 : Développement d'algorithmes, analyse de données, 
+                                    expérimentations, etc.]</span>
+                                </li>
+                                <li class="flex items-start gap-3 text-slate-300">
+                                    <i data-lucide="chevron-right" class="w-5 h-5 text-blue-400 mt-1 flex-shrink-0"></i>
+                                    <span>[Mission 3 : Collaboration avec l'équipe, présentation des résultats, 
+                                    rédaction de rapports]</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Technologies -->
+                        <div class="mb-6">
+                            <h3 class="text-xl font-semibold text-slate-200 mb-4 flex items-center gap-2">
+                                <i data-lucide="code-2" class="w-5 h-5 text-blue-400"></i>
+                                Technologies & Outils
+                            </h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-blue-600/20 text-blue-300 px-4 py-2 rounded-lg text-sm border border-blue-500/30">Python</span>
+                                <span class="bg-blue-600/20 text-blue-300 px-4 py-2 rounded-lg text-sm border border-blue-500/30">TensorFlow</span>
+                                <span class="bg-blue-600/20 text-blue-300 px-4 py-2 rounded-lg text-sm border border-blue-500/30">PyTorch</span>
+                                <span class="bg-blue-600/20 text-blue-300 px-4 py-2 rounded-lg text-sm border border-blue-500/30">ROS</span>
+                                <span class="bg-blue-600/20 text-blue-300 px-4 py-2 rounded-lg text-sm border border-blue-500/30">Git</span>
+                                <span class="bg-blue-600/20 text-blue-300 px-4 py-2 rounded-lg text-sm border border-blue-500/30">Docker</span>
+                                <span class="bg-blue-600/20 text-blue-300 px-4 py-2 rounded-lg text-sm border border-blue-500/30">[Autre outil]</span>
+                            </div>
+                        </div>
+
+                        <!-- Results -->
+                        <div class="bg-slate-900/50 p-6 rounded-lg border border-blue-500/30">
+                            <h3 class="text-xl font-semibold text-slate-200 mb-4 flex items-center gap-2">
+                                <i data-lucide="trophy" class="w-5 h-5 text-yellow-400"></i>
+                                Résultats & Réalisations
+                            </h3>
+                            <ul class="space-y-3">
+                                <li class="flex items-start gap-3 text-slate-300">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-green-400 mt-1 flex-shrink-0"></i>
+                                    <span>[Résultat mesurable 1 : amélioration de X%, développement d'un système qui...]</span>
+                                </li>
+                                <li class="flex items-start gap-3 text-slate-300">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-green-400 mt-1 flex-shrink-0"></i>
+                                    <span>[Résultat mesurable 2 : publication, présentation en conférence, etc.]</span>
+                                </li>
+                                <li class="flex items-start gap-3 text-slate-300">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-green-400 mt-1 flex-shrink-0"></i>
+                                    <span>[Impact : contribution au projet, apport à l'équipe]</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- Previous Experience - Stage -->
+                <section class="animate-on-scroll">
+                    <div class="bg-slate-800/50 p-8 rounded-xl border border-slate-700 hover:border-blue-500/50 transition-all timeline-item">
+                        
+                        <!-- Header -->
+                        <div class="flex items-start gap-4 mb-6">
+                            <div class="bg-slate-700 p-4 rounded-xl">
+                                <i data-lucide="briefcase" class="w-8 h-8 text-slate-300"></i>
+                            </div>
+                            <div>
+                                <h2 class="text-3xl font-bold text-slate-200 mb-2">Stage - [Intitulé du poste]</h2>
+                                <p class="text-xl text-slate-300 mb-2">[Entreprise/Laboratoire]</p>
+                                <div class="flex flex-wrap items-center gap-4 text-slate-400">
+                                    <span class="flex items-center gap-2">
+                                        <i data-lucide="calendar" class="w-4 h-4"></i>
+                                        [Date début] - [Date fin]
+                                    </span>
+                                    <span class="flex items-center gap-2">
+                                        <i data-lucide="map-pin" class="w-4 h-4"></i>
+                                        [Lieu]
+                                    </span>
+                                    <span class="flex items-center gap-2">
+                                        <i data-lucide="clock" class="w-4 h-4"></i>
+                                        [Durée - ex: 6 mois]
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Description -->
+                        <div class="mb-6">
+                            <h3 class="text-xl font-semibold text-slate-200 mb-3 flex items-center gap-2">
+                                <i data-lucide="file-text" class="w-5 h-5 text-cyan-400"></i>
+                                Description
+                            </h3>
+                            <p class="text-slate-300 leading-relaxed">
+                                [Décrivez le contexte de votre stage : l'entreprise/laboratoire, le sujet, 
+                                les objectifs, ce que vous deviez accomplir]
+                            </p>
+                        </div>
+
+                        <!-- Missions -->
+                        <div class="mb-6">
+                            <h3 class="text-xl font-semibold text-slate-200 mb-4 flex items-center gap-2">
+                                <i data-lucide="list-checks" class="w-5 h-5 text-cyan-400"></i>
+                                Missions réalisées
+                            </h3>
+                            <ul class="space-y-3">
+                                <li class="flex items-start gap-3 text-slate-300">
+                                    <i data-lucide="chevron-right" class="w-5 h-5 text-cyan-400 mt-1 flex-shrink-0"></i>
+                                    <span>[Mission 1 détaillée]</span>
+                                </li>
+                                <li class="flex items-start gap-3 text-slate-300">
+                                    <i data-lucide="chevron-right" class="w-5 h-5 text-cyan-400 mt-1 flex-shrink-0"></i>
+                                    <span>[Mission 2 détaillée]</span>
+                                </li>
+                                <li class="flex items-start gap-3 text-slate-300">
+                                    <i data-lucide="chevron-right" class="w-5 h-5 text-cyan-400 mt-1 flex-shrink-0"></i>
+                                    <span>[Mission 3 détaillée]</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Technologies -->
+                        <div class="mb-6">
+                            <h3 class="text-xl font-semibold text-slate-200 mb-4 flex items-center gap-2">
+                                <i data-lucide="code-2" class="w-5 h-5 text-cyan-400"></i>
+                                Technologies utilisées
+                            </h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-slate-700 text-slate-300 px-4 py-2 rounded-lg text-sm">[Tech 1]</span>
+                                <span class="bg-slate-700 text-slate-300 px-4 py-2 rounded-lg text-sm">[Tech 2]</span>
+                                <span class="bg-slate-700 text-slate-300 px-4 py-2 rounded-lg text-sm">[Tech 3]</span>
+                                <span class="bg-slate-700 text-slate-300 px-4 py-2 rounded-lg text-sm">[Tech 4]</span>
+                            </div>
+                        </div>
+
+                        <!-- Results -->
+                        <div class="bg-slate-900/50 p-6 rounded-lg">
+                            <h3 class="text-xl font-semibold text-slate-200 mb-4 flex items-center gap-2">
+                                <i data-lucide="award" class="w-5 h-5 text-yellow-400"></i>
+                                Résultats obtenus
+                            </h3>
+                            <ul class="space-y-3">
+                                <li class="flex items-start gap-3 text-slate-300">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-green-400 mt-1 flex-shrink-0"></i>
+                                    <span>[Résultat 1]</span>
+                                </li>
+                                <li class="flex items-start gap-3 text-slate-300">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-green-400 mt-1 flex-shrink-0"></i>
+                                    <span>[Résultat 2]</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- Education Section -->
+                <section class="animate-on-scroll">
+                    <div class="mt-12 mb-8">
+                        <h2 class="text-4xl font-bold mb-2 flex items-center gap-3">
+                            <i data-lucide="graduation-cap" class="w-10 h-10 text-blue-400"></i>
+                            Formation Académique
+                        </h2>
+                        <div class="h-1 w-24 bg-gradient-to-r from-blue-500 to-cyan-500 rounded ml-14"></div>
+                    </div>
+
+                    <div class="space-y-6">
+                        
+                        <!-- Master -->
+                        <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700 hover:border-blue-500/50 transition-all timeline-item">
+                            <div class="flex items-start gap-4">
+                                <div class="bg-blue-600 p-3 rounded-lg">
+                                    <i data-lucide="graduation-cap" class="w-6 h-6"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <h3 class="text-2xl font-bold text-blue-400 mb-2">Master Automatique & Robotique</h3>
+                                    <p class="text-lg text-slate-300 mb-2">Parcours Systèmes Intelligents - Sorbonne Université</p>
+                                    <p class="text-slate-400 mb-4">
+                                        <i data-lucide="calendar" class="w-4 h-4 inline mr-2"></i>
+                                        2023 - 2025 (en cours)
+                                    </p>
+                                    <p class="text-slate-300 mb-4 leading-relaxed">
+                                        Formation approfondie en intelligence artificielle, robotique, apprentissage automatique, 
+                                        contrôle optimal et systèmes autonomes. Spécialisation en systèmes intelligents avec 
+                                        une forte composante recherche.
+                                    </p>
+                                    
+                                    <!-- Key Courses -->
+                                    <div class="bg-slate-900/50 p-4 rounded-lg">
+                                        <h4 class="font-semibold text-slate-200 mb-3">Cours principaux :</h4>
+                                        <div class="grid md:grid-cols-2 gap-2 text-sm text-slate-300">
+                                            <div class="flex items-center gap-2">
+                                                <i data-lucide="check" class="w-4 h-4 text-blue-400"></i>
+                                                <span>Apprentissage automatique</span>
+                                            </div>
+                                            <div class="flex items-center gap-2">
+                                                <i data-lucide="check" class="w-4 h-4 text-blue-400"></i>
+                                                <span>Deep Learning</span>
+                                            </div>
+                                            <div class="flex items-center gap-2">
+                                                <i data-lucide="check" class="w-4 h-4 text-blue-400"></i>
+                                                <span>Robotique mobile</span>
+                                            </div>
+                                            <div class="flex items-center gap-2">
+                                                <i data-lucide="check" class="w-4 h-4 text-blue-400"></i>
+                                                <span>Computer Vision</span>
+                                            </div>
+                                            <div class="flex items-center gap-2">
+                                                <i data-lucide="check" class="w-4 h-4 text-blue-400"></i>
+                                                <span>Contrôle optimal</span>
+                                            </div>
+                                            <div class="flex items-center gap-2">
+                                                <i data-lucide="check" class="w-4 h-4 text-blue-400"></i>
+                                                <span>Systèmes embarqués</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Licence ou formation précédente -->
+                        <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700 hover:border-blue-500/50 transition-all timeline-item">
+                            <div class="flex items-start gap-4">
+                                <div class="bg-slate-700 p-3 rounded-lg">
+                                    <i data-lucide="graduation-cap" class="w-6 h-6 text-slate-300"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <h3 class="text-2xl font-bold text-slate-200 mb-2">[Licence / Formation précédente]</h3>
+                                    <p class="text-lg text-slate-300 mb-2">[Spécialité] - [Université]</p>
+                                    <p class="text-slate-400 mb-4">
+                                        <i data-lucide="calendar" class="w-4 h-4 inline mr-2"></i>
+                                        [Années]
+                                    </p>
+                                    <p class="text-slate-300 leading-relaxed">
+                                        [Description de votre formation précédente, ce que vous avez appris, 
+                                        les compétences développées]
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- Skills Summary -->
+            <section class="mt-16 animate-on-scroll">
+                <div class="bg-gradient-to-r from-blue-600/20 to-cyan-600/20 p-8 rounded-xl border border-blue-500/30">
+                    <h2 class="text-3xl font-bold text-blue-400 mb-6 text-center">Compétences Développées</h2>
+                    <div class="grid md:grid-cols-4 gap-6">
+                        
+                        <div class="text-center">
+                            <div class="bg-blue-600/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                                <i data-lucide="code" class="w-8 h-8 text-blue-400"></i>
+                            </div>
+                            <h3 class="font-semibold text-slate-200 mb-2">Programmation</h3>
+                            <p class="text-sm text-slate-400">Python, C++, MATLAB</p>
+                        </div>
+
+                        <div class="text-center">
+                            <div class="bg-cyan-600/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                                <i data-lucide="brain" class="w-8 h-8 text-cyan-400"></i>
+                            </div>
+                            <h3 class="font-semibold text-slate-200 mb-2">IA & ML</h3>
+                            <p class="text-sm text-slate-400">TensorFlow, PyTorch, Scikit-learn</p>
+                        </div>
+
+                        <div class="text-center">
+                            <div class="bg-purple-600/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                                <i data-lucide="cpu" class="w-8 h-8 text-purple-400"></i>
+                            </div>
+                            <h3 class="font-semibold text-slate-200 mb-2">Robotique</h3>
+                            <p class="text-sm text-slate-400">ROS, Gazebo, Navigation</p>
+                        </div>
+
+                        <div class="text-center">
+                            <div class="bg-pink-600/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                                <i data-lucide="git-branch" class="w-8 h-8 text-pink-400"></i>
+                            </div>
+                            <h3 class="font-semibold text-slate-200 mb-2">Outils</h3>
+                            <p class="text-sm text-slate-400">Git, Docker, Linux</p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA -->
+            <section class="mt-12 animate-on-scroll">
+                <div class="bg-slate-800/50 p-8 rounded-xl border border-slate-700 text-center">
+                    <h2 class="text-2xl font-bold text-blue-400 mb-4">Découvrez mes projets</h2>
+                    <p class="text-lg text-slate-300 mb-6">
+                        Consultez mes réalisations techniques et mes contributions à la recherche
+                    </p>
+                    <div class="flex gap-4 justify-center flex-wrap">
+                        <a href="projects.html" class="bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-lg font-semibold transition-all hover:scale-105 shadow-lg inline-flex items-center gap-2">
+                            <i data-lucide="folder" class="w-5 h-5"></i>
+                            Voir mes projets
+                        </a>
+                        <a href="research.html" class="border-2 border-blue-500 hover:bg-blue-500/10 px-8 py-3 rounded-lg font-semibold transition-all hover:scale-105 inline-flex items-center gap-2">
+                            <i data-lucide="award" class="w-5 h-5"></i>
+                            Activités de recherche
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-8 px-6 border-t border-slate-700">
+        <div class="max-w-7xl mx-auto text-center text-slate-400">
+            <p>© 2024 Votre Nom - Portfolio Recherche | Master Automatique & Robotique</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../js/script.js"></script>
+    
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

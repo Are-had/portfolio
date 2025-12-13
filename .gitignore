@@ -1,0 +1,34 @@
+# Dossier des anciennes versions
+old/
+
+# Images (assets)
+assets/images/
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.webp
+*.svg
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Éditeurs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node modules (si tu utilises npm)
+node_modules/
+package-lock.json
+
+# Fichiers de log
+*.log
+npm-debug.log*
+
+# Fichiers temporaires
+.temp/
+tmp/
