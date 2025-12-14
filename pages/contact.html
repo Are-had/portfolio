@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Formulaire de contact et coordonnées">
-    <title>Contact - [Votre Nom]</title>
+    <meta name="description" content="Contact form and contact details">
+    <title>Contact - Arezki HADDOUCHE</title>
     
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -59,22 +59,22 @@
             <!-- Back Button -->
             <a href="../index.html" class="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 mb-8 transition-colors group">
                 <i data-lucide="arrow-left" class="w-5 h-5 group-hover:-translate-x-1 transition-transform"></i>
-                Retour à l'accueil
+                Back to Home
             </a>
 
             <!-- Page Title -->
             <h1 class="text-5xl md:text-6xl font-bold mb-12 flex items-center gap-4 animate-on-scroll">
                 <div class="w-3 h-16 bg-blue-500 rounded"></div>
-                Me Contacter
+                Contact Me
             </h1>
 
             <!-- Intro Text -->
             <div class="text-center mb-12 animate-on-scroll">
                 <p class="text-2xl text-slate-300 mb-6">
-                    Intéressé par mon profil pour une thèse ou un poste en R&D ?
+                    Open to PhD & R&D Opportunities
                 </p>
                 <p class="text-xl text-slate-400">
-                    N'hésitez pas à me contacter, je serais ravi d'échanger avec vous !
+                    Feel free to reach out, I'd be happy to connect with you!
                 </p>
             </div>
 
@@ -91,40 +91,40 @@
                 </a>
 
                 <!-- LinkedIn -->
-                <a href="https://linkedin.com/in/votre-profil" target="_blank" rel="noopener noreferrer"
+                <a href="https://www.linkedin.com/in/arezki-h-325105225/" target="_blank" rel="noopener noreferrer"
                    class="bg-slate-800/50 p-8 rounded-xl border border-slate-700 hover:border-blue-500/50 transition-all hover:transform hover:scale-105 text-center group">
                     <div class="bg-blue-600 p-4 rounded-xl w-16 h-16 mx-auto mb-4 group-hover:bg-blue-500 transition-colors">
                         <i data-lucide="linkedin" class="w-8 h-8"></i>
                     </div>
                     <h3 class="text-xl font-bold text-slate-200 mb-2">LinkedIn</h3>
-                    <p class="text-blue-400 text-sm">Voir mon profil</p>
+                    <p class="text-blue-400 text-sm">View my profile</p>
                 </a>
 
                 <!-- GitHub -->
-                <a href="https://github.com/votre-username" target="_blank" rel="noopener noreferrer"
+                <a href="https://github.com/Are-had" target="_blank" rel="noopener noreferrer"
                    class="bg-slate-800/50 p-8 rounded-xl border border-slate-700 hover:border-blue-500/50 transition-all hover:transform hover:scale-105 text-center group">
                     <div class="bg-slate-700 p-4 rounded-xl w-16 h-16 mx-auto mb-4 group-hover:bg-slate-600 transition-colors">
                         <i data-lucide="github" class="w-8 h-8"></i>
                     </div>
                     <h3 class="text-xl font-bold text-slate-200 mb-2">GitHub</h3>
-                    <p class="text-slate-400 text-sm">Voir mes projets</p>
+                    <p class="text-slate-400 text-sm">View my projects</p>
                 </a>
             </div>
 
             <!-- Contact Form -->
             <div class="bg-slate-800/50 p-8 rounded-xl border border-slate-700 mb-12 animate-on-scroll">
-                <h2 class="text-2xl font-bold text-blue-400 mb-6">Formulaire de Contact</h2>
+                <h2 class="text-2xl font-bold text-blue-400 mb-6">Contact Form</h2>
                 <form id="contact-form" action="https://formsubmit.co/contact.arezki.haddouche@gmail.com" method="POST" class="space-y-6">
                     <!-- Name Field -->
                     <div>
-                        <label for="name" class="block text-slate-200 font-semibold mb-2">Nom complet</label>
+                        <label for="name" class="block text-slate-200 font-semibold mb-2">Full Name</label>
                         <input 
                             type="text" 
                             id="name" 
                             name="name" 
                             required
                             class="w-full bg-slate-900/50 border border-slate-600 rounded-lg px-4 py-3 text-white placeholder-slate-400 focus:outline-none focus:border-blue-500 transition-colors"
-                            placeholder="Votre nom"
+                            placeholder="Your name"
                         >
                     </div>
 
@@ -137,24 +137,24 @@
                             name="email" 
                             required
                             class="w-full bg-slate-900/50 border border-slate-600 rounded-lg px-4 py-3 text-white placeholder-slate-400 focus:outline-none focus:border-blue-500 transition-colors"
-                            placeholder="votre.email@example.com"
+                            placeholder="your.email@example.com"
                         >
                     </div>
 
                     <!-- Subject Field -->
                     <div>
-                        <label for="subject" class="block text-slate-200 font-semibold mb-2">Sujet</label>
+                        <label for="subject" class="block text-slate-200 font-semibold mb-2">Subject</label>
                         <select 
                             id="subject" 
                             name="subject" 
                             required
                             class="w-full bg-slate-900/50 border border-slate-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition-colors"
                         >
-                            <option value="">-- Sélectionnez un sujet --</option>
-                            <option value="thesis">Proposition de thèse</option>
-                            <option value="cdi">Offre CDI en R&D</option>
-                            <option value="collaboration">Collaboration de recherche</option>
-                            <option value="other">Autre</option>
+                            <option value="">-- Select a subject --</option>
+                            <option value="thesis">PhD Proposal</option>
+                            <option value="cdi">R&D Job Offer</option>
+                            <option value="collaboration">Research Collaboration</option>
+                            <option value="other">Other</option>
                         </select>
                     </div>
 
@@ -167,7 +167,7 @@
                             required
                             rows="6"
                             class="w-full bg-slate-900/50 border border-slate-600 rounded-lg px-4 py-3 text-white placeholder-slate-400 focus:outline-none focus:border-blue-500 transition-colors resize-none"
-                            placeholder="Votre message..."
+                            placeholder="Your message..."
                         ></textarea>
                     </div>
 
@@ -177,7 +177,7 @@
                         class="w-full bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-lg font-semibold transition-all hover:scale-105 flex items-center justify-center gap-2"
                     >
                         <i data-lucide="send" class="w-5 h-5"></i>
-                        Envoyer le message
+                        Send Message
                     </button>
 
                     <!-- Form Message -->
@@ -187,14 +187,14 @@
 
             <!-- Additional Information -->
             <div class="bg-gradient-to-br from-blue-600/10 to-cyan-600/10 p-8 rounded-xl border-2 border-blue-500/30 mb-12 animate-on-scroll">
-                <h2 class="text-2xl font-bold text-blue-400 mb-6 text-center">Informations Complémentaires</h2>
+                <h2 class="text-2xl font-bold text-blue-400 mb-6 text-center">Additional Information</h2>
                 <div class="grid md:grid-cols-2 gap-6">
                     <!-- Location -->
                     <div class="text-center">
                         <div class="inline-block bg-blue-600 p-3 rounded-lg mb-3">
                             <i data-lucide="map-pin" class="w-6 h-6"></i>
                         </div>
-                        <h3 class="font-semibold text-slate-200 mb-2">Localisation</h3>
+                        <h3 class="font-semibold text-slate-200 mb-2">Location</h3>
                         <p class="text-slate-300">Paris, France</p>
                     </div>
 
@@ -203,8 +203,8 @@
                         <div class="inline-block bg-cyan-600 p-3 rounded-lg mb-3">
                             <i data-lucide="calendar" class="w-6 h-6"></i>
                         </div>
-                        <h3 class="font-semibold text-slate-200 mb-2">Disponibilité</h3>
-                        <p class="text-slate-300">[Date] pour thèse/CDI</p>
+                        <h3 class="font-semibold text-slate-200 mb-2">Availability</h3>
+                        <p class="text-slate-300">October 2026</p>
                     </div>
 
                     <!-- Languages -->
@@ -212,8 +212,8 @@
                         <div class="inline-block bg-purple-600 p-3 rounded-lg mb-3">
                             <i data-lucide="globe" class="w-6 h-6"></i>
                         </div>
-                        <h3 class="font-semibold text-slate-200 mb-2">Langues</h3>
-                        <p class="text-slate-300">Français (natif), Anglais (courant)</p>
+                        <h3 class="font-semibold text-slate-200 mb-2">Languages</h3>
+                        <p class="text-slate-300">French (native), English (fluent)</p>
                     </div>
 
                     <!-- Mobility -->
@@ -221,20 +221,26 @@
                         <div class="inline-block bg-pink-600 p-3 rounded-lg mb-3">
                             <i data-lucide="plane" class="w-6 h-6"></i>
                         </div>
-                        <h3 class="font-semibold text-slate-200 mb-2">Mobilité</h3>
-                        <p class="text-slate-300">[Nationale/Internationale]</p>
+                        <h3 class="font-semibold text-slate-200 mb-2">Mobility</h3>
+                        <p class="text-slate-300">France & Europe</p>
                     </div>
                 </div>
             </div>
 
             <!-- CV Download -->
             <div class="bg-slate-800/50 p-8 rounded-xl border border-slate-700 text-center animate-on-scroll">
-                <h3 class="text-xl font-bold text-slate-200 mb-4">Télécharger mon CV</h3>
-                <p class="text-slate-400 mb-6">Version PDF complète avec tous les détails</p>
-                <button id="download-cv" class="bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-lg font-semibold transition-all hover:scale-105 inline-flex items-center gap-2">
-                    <i data-lucide="download" class="w-5 h-5"></i>
-                    Télécharger le CV (PDF)
-                </button>
+                <h3 class="text-xl font-bold text-slate-200 mb-4">Download My CV</h3>
+                <p class="text-slate-400 mb-6">Complete PDF version with all details</p>
+                <div class="flex gap-4 justify-center flex-wrap">
+                    <a href="../assets/cv/CV_Arezki _Haddouche_VA.pdf" download class="bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-lg font-semibold transition-all hover:scale-105 inline-flex items-center gap-2">
+                        <i data-lucide="download" class="w-5 h-5"></i>
+                        CV (English)
+                    </a>
+                    <a href="../assets/cv/CV_Arezki _Haddouche_VF.pdf" download class="border-2 border-blue-500 hover:bg-blue-500/10 px-8 py-3 rounded-lg font-semibold transition-all hover:scale-105 inline-flex items-center gap-2">
+                        <i data-lucide="download" class="w-5 h-5"></i>
+                        CV (Français)
+                    </a>
+                </div>
             </div>
         </div>
     </main>
@@ -242,7 +248,7 @@
     <!-- Footer -->
     <footer class="py-8 px-6 border-t border-slate-700">
         <div class="max-w-7xl mx-auto text-center text-slate-400">
-            <p>© 2024 Votre Nom - Portfolio Recherche | Master Automatique & Robotique</p>
+            <p>© 2024 Arezki HADDOUCHE - Research Portfolio | Master's in Automation & Robotics, Intelligent Systems - Sorbonne University</p>
         </div>
     </footer>
 

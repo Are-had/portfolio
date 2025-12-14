@@ -1,14 +1,18 @@
 # Dossier des anciennes versions
 old/
 
-# Images (assets)
-assets/images/
-*.jpg
-*.jpeg
-*.png
-*.gif
-*.webp
-*.svg
+# Images (assets) - except profile photo
+# assets/images/  <- commented out to allow profile photo
+!assets/images/arezki.webp
+!assets/images/arezki.png
+
+# Other images can still be ignored if needed
+# *.jpg
+# *.jpeg
+# *.png
+# *.gif
+# *.webp
+# *.svg
 
 # Fichiers système
 .DS_Store
