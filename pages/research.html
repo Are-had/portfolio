@@ -108,16 +108,22 @@
                     </div>
                     
                     <div class="flex-grow text-center md:text-left">
-                        <h3 class="text-2xl font-bold text-white mb-2">First Year Research Report</h3>
-                        <p class="text-blue-400 font-medium mb-3">Geophysical Validation of EarthCARE/ATLID Lidar</p>
+                        <h3 class="text-2xl font-bold text-white mb-2">First Year Research Report: EarthCARE Mission Validation</h3>
+                        <p class="text-blue-400 font-medium mb-3">Automated Validation Chain & Multi-Station Analysis (SIRTA, TMF, AKY)</p>
                         <p class="text-slate-300 mb-6 max-w-2xl">
-                            A comprehensive report detailing the methodology developed at LMD to validate the ATLID satellite instrument. The study focuses on comparing satellite backscatter signals with ground-based measurements from the IPRAL lidar (SIRTA observatory) to characterize stratospheric aerosols and calibrate the data pipeline.
+                            Report conducted at LMD regarding the geophysical validation of the EarthCARE mission. The study details the development of an automated colocation algorithm to compare ATLID space lidar data with ground-based stations.
                         </p>
                         
-                        <a href="../assets/documents/report_year1.pdf" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-all inline-flex items-center gap-2 hover:scale-105 shadow-lg">
-                            <i data-lucide="download" class="w-5 h-5"></i>
-                            Download Report (PDF)
-                        </a>
+                        <div class="flex flex-wrap gap-4 justify-center md:justify-start">
+                            <a href="../assets/rappport/rapport alternance.pdf" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-all inline-flex items-center gap-2 hover:scale-105 shadow-lg">
+                                <i data-lucide="download" class="w-5 h-5"></i>
+                                Download Report (PDF)
+                            </a>
+                            <a href="../assets/rappport/presentation alternance.pdf" target="_blank" class="border-2 border-purple-500 hover:bg-purple-500/10 text-purple-400 px-6 py-3 rounded-lg font-semibold transition-all inline-flex items-center gap-2 hover:scale-105">
+                                <i data-lucide="projector" class="w-5 h-5"></i>
+                                Download Presentation (PDF)
+                            </a>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -127,45 +133,67 @@
                     <i data-lucide="presentation" class="w-8 h-8 text-purple-400"></i>
                     Scientific Communication
                 </h2>
-                
-                <div class="grid md:grid-cols-2 gap-6">
-                    
-                    <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700 hover:border-purple-500/50 transition-all group">
-                        <div class="flex justify-between items-start mb-4">
-                            <div class="bg-purple-600/20 p-3 rounded-lg text-purple-400">
+
+                <div class="space-y-8">
+                    <div class="bg-slate-800/50 p-6 rounded-xl border border-purple-500/30 hover:border-purple-500/50 transition-all group">
+                        <div class="flex items-start gap-4">
+                            <div class="bg-purple-600/20 p-3 rounded-lg text-purple-400 group-hover:bg-purple-600 group-hover:text-white transition-colors">
                                 <i data-lucide="image" class="w-6 h-6"></i>
                             </div>
-                            <span class="text-xs font-bold bg-slate-700 text-slate-300 px-2 py-1 rounded uppercase tracking-wide">Poster</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-slate-200 mb-2 group-hover:text-purple-400 transition-colors">
-                            [Titre de ton Poster]
-                        </h3>
-                        <p class="text-slate-400 text-sm mb-4">
-                            Presented at [Nom de l'événement], [Date].
-                        </p>
-                        <a href="../assets/documents/poster.pdf" target="_blank" class="text-purple-400 hover:text-purple-300 font-medium inline-flex items-center gap-1 text-sm hover:underline">
-                            View Poster <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                        </a>
-                    </div>
-
-                    <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700 hover:border-purple-500/50 transition-all group">
-                        <div class="flex justify-between items-start mb-4">
-                            <div class="bg-purple-600/20 p-3 rounded-lg text-purple-400">
-                                <i data-lucide="projector" class="w-6 h-6"></i>
+                            <div>
+                                <h3 class="text-xl font-bold text-slate-200 mb-2 leading-tight">
+                                    Comparison of ATLID & Ground-based Lidar: Measurement Campaigns and Spatial Analysis
+                                </h3>
+                                <p class="text-slate-400 mb-2 text-sm">
+                                    Poster Presentation
+                                </p>
+                                <p class="text-slate-300 mb-2 text-sm flex flex-wrap gap-2 items-center">
+                                    <span class="bg-purple-900/50 text-purple-300 px-2 py-1 rounded text-xs border border-purple-500/30">Journée Scientifique ICEO/SIRTA 2025 (24th Edition)</span>
+                                    <span class="text-slate-500">•</span>
+                                    <span>June 24, 2025</span>
+                                    <span class="text-slate-500">•</span>
+                                    <span class="italic text-slate-400">École Polytechnique, Palaiseau</span>
+                                </p>
+                                <p class="text-slate-300 mb-4 text-sm">
+                                    Presented a comprehensive study on the validation of ATLID Level 1 & 2 products.
+                                </p>
+                                <a href="../assets/rappport/ATLID_Lidar_sol_poster.pdf" target="_blank" class="inline-flex items-center gap-2 text-sm font-semibold text-purple-400 hover:text-purple-300 border border-purple-500/30 px-4 py-2 rounded-lg hover:bg-purple-500/10 transition-colors">
+                                    <i data-lucide="external-link" class="w-4 h-4"></i>
+                                    View Poster
+                                </a>
                             </div>
-                            <span class="text-xs font-bold bg-slate-700 text-slate-300 px-2 py-1 rounded uppercase tracking-wide">Presentation</span>
                         </div>
-                        <h3 class="text-xl font-bold text-slate-200 mb-2 group-hover:text-purple-400 transition-colors">
-                            [Sujet de Présentation]
-                        </h3>
-                        <p class="text-slate-400 text-sm mb-4">
-                            Oral presentation at [Lieu/Événement].
-                        </p>
-                        <a href="../assets/documents/presentation.pdf" target="_blank" class="text-purple-400 hover:text-purple-300 font-medium inline-flex items-center gap-1 text-sm hover:underline">
-                            View Slides <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                        </a>
                     </div>
 
+                    <div class="bg-slate-800/50 p-6 rounded-xl border border-purple-500/30 hover:border-purple-500/50 transition-all group">
+                        <div class="flex items-start gap-4">
+                            <div class="bg-purple-600/20 p-3 rounded-lg text-purple-400 group-hover:bg-purple-600 group-hover:text-white transition-colors">
+                                <i data-lucide="image" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-slate-200 mb-2 leading-tight">
+                                    Deep Learning Denoising of Atmospheric Lidar ATLID Data Using Noise Prediction Approach
+                                </h3>
+                                <p class="text-slate-400 mb-2 text-sm">
+                                    Poster Presentation
+                                </p>
+                                <p class="text-slate-300 mb-2 text-sm flex flex-wrap gap-2 items-center">
+                                    <span class="bg-purple-900/50 text-purple-300 px-2 py-1 rounded text-xs border border-purple-500/30">Hi! PARIS Summer School 2025</span>
+                                    <span class="text-slate-500">•</span>
+                                    <span>July 7-10, 2025</span>
+                                    <span class="text-slate-500">•</span>
+                                    <span class="italic text-slate-400">École Polytechnique (IP Paris)</span>
+                                </p>
+                                <p class="text-slate-300 mb-4 text-sm">
+                                    Presented a novel Deep Learning approach (based on U-Net CNN) for denoising ATLID atmospheric lidar data using a noise prediction strategy.
+                                </p>
+                                <a href="../assets/rappport/CNN_Atlid_poster.pdf" target="_blank" class="inline-flex items-center gap-2 text-sm font-semibold text-purple-400 hover:text-purple-300 border border-purple-500/30 px-4 py-2 rounded-lg hover:bg-purple-500/10 transition-colors">
+                                    <i data-lucide="external-link" class="w-4 h-4"></i>
+                                    View Poster
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
